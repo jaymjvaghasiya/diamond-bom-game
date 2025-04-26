@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#F8F9FA"
+    android:fillViewport="true"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Title with Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/linearMenuActData"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvMenuActName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="32sp"
+                android:textColor="#1A237E"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/tvMenuActCredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_0"
+                android:textSize="32sp"
+                android:textColor="#1A237E"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+
+        <!-- Play Button -->
+        <Button
+            android:id="@+id/btnMenuActPlay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/play_game"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3F51B5"
+            android:layout_marginBottom="20dp"
+            android:elevation="4dp"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="center" />
+
+        <!-- Leaderboard Button -->
+        <Button
+            android:id="@+id/btnMenuActLeaderBoard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/leader_board"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3F51B5"
+            android:layout_marginBottom="20dp"
+            android:elevation="4dp"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>

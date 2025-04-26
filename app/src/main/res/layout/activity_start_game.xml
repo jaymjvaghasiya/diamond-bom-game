@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartGameActivity">
+
+    <!-- LinearLayout to display user info (name, win amount, bet amount) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/linearStartGameData"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!-- TextView for Name -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/tvStartGameName"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="@string/user" />
+
+        <!-- TextView for Win Amount -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/tvStartGameWinAmt"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="@string/_0" />
+
+        <!-- TextView for Bet Amount -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/tvStartGameBetAmt"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="@string/_0" />
+
+    </LinearLayout>
+
+    <!-- GridLayout for game images -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/glStartGameImg"
+        android:layout_below="@id/linearStartGameData"
+        android:layout_marginTop="110dp"
+        android:useDefaultMargins="true"
+        android:rowCount="4"
+        android:columnCount="4">
+
+        <!-- ImageButtons for game tiles (total 16) -->
+        <ImageButton android:id="@+id/imgBtn0" android:layout_column="0" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn1" android:layout_column="0" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn2" android:layout_column="0" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn3" android:layout_column="0" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
+
+        <ImageButton android:id="@+id/imgBtn4" android:layout_column="1" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn5" android:layout_column="1" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn6" android:layout_column="1" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn7" android:layout_column="1" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
+
+        <ImageButton android:id="@+id/imgBtn8" android:layout_column="2" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn9" android:layout_column="2" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn10" android:layout_column="2" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn11" android:layout_column="2" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
+
+        <ImageButton android:id="@+id/imgBtn12" android:layout_column="3" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn13" android:layout_column="3" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn14" android:layout_column="3" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn15" android:layout_column="3" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnStartGameWithdraw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/glStartGameImg"
+        android:text="@string/withdraw"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3F51B5"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="200sp"
+        android:elevation="4dp"
+        android:background="@drawable/rounded_button"/>
+
+
+</RelativeLayout>

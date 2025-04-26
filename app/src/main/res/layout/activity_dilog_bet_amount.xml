@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DilogBetAmount">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_bet_amount"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etBetAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/amount_in" />
+
+        <Button
+            android:id="@+id/btnBat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bat"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>

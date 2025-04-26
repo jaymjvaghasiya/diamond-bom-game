@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#F8F9FA"
+    android:fillViewport="true"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/tvSignupActText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textSize="32sp"
+            android:textColor="#1A237E"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="40dp" />
+
+        <!-- First Name EditText -->
+        <EditText
+            android:id="@+id/edtSignupActFirstname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/firstname"
+            android:padding="12dp"
+            android:inputType="text"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Last Name EditText -->
+        <EditText
+            android:id="@+id/edtSignupActLastname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/lastname"
+            android:padding="12dp"
+            android:inputType="text"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/edtSignupActEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/email"
+            android:padding="12dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/edtSignupActPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/password"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnSignupActRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/register"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3F51B5"
+            android:layout_marginBottom="20dp"
+            android:elevation="4dp"
+            android:background="@drawable/rounded_button" />
+
+        <!-- Login Text Link -->
+        <TextView
+            android:id="@+id/tvSignupActLoginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="14sp"
+            android:textColor="#3F51B5"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</ScrollView>
