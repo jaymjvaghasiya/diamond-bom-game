@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -124,10 +126,12 @@ public class StartGameActivity extends AppCompatActivity {
                     Integer statusCode = ft.get();
                     Log.i("SHARED_PREF_CREDIT", statusCode+"");
                     if(statusCode == 200) {
-                        Toast.makeText(getApplicationContext(), "Amount Updated Successfully.", Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-                        setResult(RESULT_OK, intent);
-                        startActivity(intent);
+                        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                            Toast.makeText(getApplicationContext(), "Amount Updated Successfully.", Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                            setResult(RESULT_OK, intent);
+                            startActivity(intent);
+                        }, 1000);
                     }
                 } catch(ExecutionException e) {
                     throw new RuntimeException(e);
@@ -164,9 +168,11 @@ public class StartGameActivity extends AppCompatActivity {
             try {
                 Integer statusCode = ft.get();
                 if(statusCode == 200) {
-                    Toast.makeText(getApplicationContext(), "Amount Updated Successfully.", Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-                    setResult(RESULT_OK, intent);
+                    new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                        Toast.makeText(getApplicationContext(), "Amount Updated Successfully.", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                        setResult(RESULT_OK, intent);
+                    }, 1000);
                 }
             } catch(ExecutionException e) {
                 throw new RuntimeException(e);
@@ -174,9 +180,11 @@ public class StartGameActivity extends AppCompatActivity {
                 throw new RuntimeException(e);
             }
 
-            Toast.makeText(getApplicationContext(), "Oops! Plz Try Again!!!", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-            startActivity(intent);
+            new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                Toast.makeText(getApplicationContext(), "Oops! Plz Try Again!!!", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                startActivity(intent);
+            }, 1000);
 
         } else {
             if(img[index].getBackground().toString().contains("RippleDrawable")) {
