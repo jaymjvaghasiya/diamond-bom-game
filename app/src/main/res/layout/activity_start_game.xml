@@ -62,25 +62,25 @@
         android:columnCount="4">
 
         <!-- ImageButtons for game tiles (total 16) -->
-        <ImageButton android:id="@+id/imgBtn0" android:layout_column="0" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn1" android:layout_column="0" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn2" android:layout_column="0" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn3" android:layout_column="0" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn0" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="0" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn1" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="0" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn2" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="0" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn3" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="0" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
 
-        <ImageButton android:id="@+id/imgBtn4" android:layout_column="1" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn5" android:layout_column="1" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn6" android:layout_column="1" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn7" android:layout_column="1" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn4" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="1" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn5" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="1" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn6" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="1" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn7" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="1" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
 
-        <ImageButton android:id="@+id/imgBtn8" android:layout_column="2" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn9" android:layout_column="2" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn10" android:layout_column="2" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn11" android:layout_column="2" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn8" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="2" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn9" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="2" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn10" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="2" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn11" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="2" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
 
-        <ImageButton android:id="@+id/imgBtn12" android:layout_column="3" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn13" android:layout_column="3" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn14" android:layout_column="3" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn15" android:layout_column="3" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn12" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="3" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn13" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="3" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn14" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="3" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn15" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="3" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
 
     </GridLayout>
 
