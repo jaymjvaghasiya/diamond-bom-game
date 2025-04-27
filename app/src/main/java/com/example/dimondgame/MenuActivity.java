@@ -81,6 +81,14 @@ public class MenuActivity extends AppCompatActivity {
                 dialog.show();
             }
         });
+
+        leaderBoard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LeaderBoardActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

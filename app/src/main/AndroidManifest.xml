@@ -15,6 +15,9 @@
         android:theme="@style/Theme.DimondGame"
         tools:targetApi="31">
         <activity
+            android:name=".LeaderBoardActivity"
+            android:exported="false" />
+        <activity
             android:name=".StartGameActivity"
             android:exported="false" />
         <activity
