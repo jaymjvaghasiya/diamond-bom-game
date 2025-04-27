@@ -34,6 +34,6 @@ public class UserModel {
     @NonNull
     @Override
     public String toString() {
-        return firstName + " " + lastName + " Credits: " + credit;
+        return firstName + " " + lastName + " \nCredits: " + credit;
     }
 }

@@ -2,6 +2,9 @@ package com.example.dimondgame;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +24,10 @@ public class SplashActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ImageView splashImage = findViewById(R.id.imgSplashAct);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.splash_animation);
+        splashImage.startAnimation(animation);
 
         Runnable runnable = new Runnable() {
             @Override
