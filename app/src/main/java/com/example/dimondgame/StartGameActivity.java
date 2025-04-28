@@ -144,10 +144,14 @@ public class StartGameActivity extends AppCompatActivity {
 
     private void gamePlay(Integer index) {
         Log.i("GamePlay", img[index]+"");
-        Log.i("GamePlay", "Seting images" + img[index].getBackground().toString());
+        if(img[index].getBackground() != null) {
+            Log.i("GamePlay", "Setting images" + img[index].getBackground());
+        } else {
+            Log.i("GamePlay", "Background is null.");
+        }
 
         if(bombArray.contains((index))) {
-            img[index].setBackground(getDrawable(R.drawable.bomb));
+            img[index].setImageResource(R.drawable.bomb);
             MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.bomb_explosion);
             mediaPlayer.start();
             mediaPlayer.setOnCompletionListener(MediaPlayer::release);
@@ -187,8 +191,8 @@ public class StartGameActivity extends AppCompatActivity {
             }, 1000);
 
         } else {
-            if(img[index].getBackground().toString().contains("RippleDrawable")) {
-                img[index].setBackground(getDrawable(R.drawable.dimond));
+            if(img[index].getBackground() == null || img[index].getBackground().toString().contains("RippleDrawable")) {
+                img[index].setImageResource(R.drawable.dimond);
 
                 MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.diamond);
                 mediaPlayer.start();

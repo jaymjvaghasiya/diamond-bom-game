@@ -9,47 +9,52 @@
 
     <!-- LinearLayout to display user info (name, win amount, bet amount) -->
     <LinearLayout
+        android:id="@+id/linearStartGameData"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:id="@+id/linearStartGameData"
         android:orientation="horizontal"
-        android:weightSum="3">
+        android:weightSum="3"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:elevation="6dp">
 
         <!-- TextView for Name -->
         <TextView
+            android:id="@+id/tvStartGameName"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:id="@+id/tvStartGameName"
-            android:textAlignment="center"
-            android:textSize="25sp"
             android:gravity="center"
-            android:text="@string/user" />
+            android:text="@string/user"
+            android:textColor="#333333"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <!-- TextView for Win Amount -->
         <TextView
+            android:id="@+id/tvStartGameWinAmt"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:id="@+id/tvStartGameWinAmt"
-            android:textAlignment="center"
-            android:textSize="25sp"
             android:gravity="center"
-            android:text="@string/_0" />
+            android:text="@string/_0"
+            android:textColor="#4CAF50"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <!-- TextView for Bet Amount -->
         <TextView
+            android:id="@+id/tvStartGameBetAmt"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:id="@+id/tvStartGameBetAmt"
-            android:textAlignment="center"
-            android:textSize="25sp"
             android:gravity="center"
-            android:text="@string/_0" />
+            android:text="@string/_0"
+            android:textColor="#F44336"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
-
     <!-- GridLayout for game images -->
     <GridLayout
         android:layout_width="match_parent"
@@ -57,49 +62,53 @@
         android:id="@+id/glStartGameImg"
         android:layout_below="@id/linearStartGameData"
         android:layout_marginTop="110dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:useDefaultMargins="true"
         android:rowCount="4"
         android:columnCount="4">
 
         <!-- ImageButtons for game tiles (total 16) -->
-        <ImageButton android:id="@+id/imgBtn0" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="0" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn1" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="0" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn2" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="0" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn3" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="0" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn0" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="0" android:layout_row="0" android:layout_height="80dp" android:layout_width="80dp"/>
+        <ImageButton android:id="@+id/imgBtn1" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="0" android:layout_row="1" android:layout_height="80dp" android:layout_width="80dp"/>
+        <ImageButton android:id="@+id/imgBtn2" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="0" android:layout_row="2" android:layout_height="80dp" android:layout_width="80dp"/>
+        <ImageButton android:id="@+id/imgBtn3" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="0" android:layout_row="3" android:layout_height="80dp" android:layout_width="80dp"/>
 
-        <ImageButton android:id="@+id/imgBtn4" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="1" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn5" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="1" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn6" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="1" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn7" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="1" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn4" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="1" android:layout_row="0" android:layout_height="80dp" android:layout_width="80dp"/>
+        <ImageButton android:id="@+id/imgBtn5" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="1" android:layout_row="1" android:layout_height="80dp" android:layout_width="80dp"/>
+        <ImageButton android:id="@+id/imgBtn6" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="1" android:layout_row="2" android:layout_height="80dp" android:layout_width="80dp"/>
+        <ImageButton android:id="@+id/imgBtn7" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="1" android:layout_row="3" android:layout_height="80dp" android:layout_width="80dp"/>
 
-        <ImageButton android:id="@+id/imgBtn8" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="2" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn9" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="2" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn10" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="2" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn11" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="2" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn8" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="2" android:layout_row="0" android:layout_height="80dp" android:layout_width="80dp"/>
+        <ImageButton android:id="@+id/imgBtn9" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="2" android:layout_row="1" android:layout_height="80dp" android:layout_width="80dp"/>
+        <ImageButton android:id="@+id/imgBtn10" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="2" android:layout_row="2" android:layout_height="80dp" android:layout_width="80dp"/>
+        <ImageButton android:id="@+id/imgBtn11" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="2" android:layout_row="3" android:layout_height="80dp" android:layout_width="80dp"/>
 
-        <ImageButton android:id="@+id/imgBtn12" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="3" android:layout_row="0" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn13" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="3" android:layout_row="1" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn14" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="3" android:layout_row="2" android:layout_height="95dp" android:layout_width="95dp"/>
-        <ImageButton android:id="@+id/imgBtn15" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="3" android:layout_row="3" android:layout_height="95dp" android:layout_width="95dp"/>
+        <ImageButton android:id="@+id/imgBtn12" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="3" android:layout_row="0" android:layout_height="80dp" android:layout_width="80dp"/>
+        <ImageButton android:id="@+id/imgBtn13" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="3" android:layout_row="1" android:layout_height="80dp" android:layout_width="80dp"/>
+        <ImageButton android:id="@+id/imgBtn14" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="3" android:layout_row="2" android:layout_height="80dp" android:layout_width="80dp"/>
+        <ImageButton android:id="@+id/imgBtn15" android:scaleType="fitXY" android:background="@null" android:src="@drawable/diamond_bomb" android:layout_column="3" android:layout_row="3" android:layout_height="80dp" android:layout_width="80dp"/>
 
     </GridLayout>
 
+    <!-- Withdraw Button -->
     <Button
         android:id="@+id/btnStartGameWithdraw"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_below="@id/glStartGameImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
         android:text="@string/withdraw"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:backgroundTint="#3F51B5"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="200sp"
-        android:elevation="4dp"
-        android:background="@drawable/rounded_button"/>
+        android:elevation="6dp"
+        android:background="@drawable/rounded_button" />
 
 
 </RelativeLayout>
